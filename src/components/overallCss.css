@@ -31,5 +31,11 @@ nav{
     padding: 10px;
 }
 .outline_border{
-    outline: 0.1px solid #5090b5;
+    /* outline: 0.1px solid #5090b5; */
+    border: 0.1px solid #5090b5;
+    
+}
+.sc_border_top_none{
+    border-top: none;
+    padding: 10px;
 }

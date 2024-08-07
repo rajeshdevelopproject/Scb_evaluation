@@ -19,23 +19,31 @@ const Dashboard = () => {
         <Row>
           <Col xs={8} className="outline_border">
             <Row>
-              <Col xs={6} className="outline_border">
+              <Col xs={6} className="outline_border sc_border_top_none">
                 <PendingApproval />
               </Col>
-              <Col xs={6} className="outline_border">
+              <Col xs={6} className="outline_border sc_border_top_none">
                 <PriorityMessage />
               </Col>
             </Row>
             <Row>
-              <Col xs={6} className="outline_border">
+              <Col
+                xs={6}
+                className="outline_border sc_border_top_none"
+                style={{ borderBottom: "none", borderLeft: "none" }}
+              >
                 <PendingTask />
               </Col>
-              <Col xs={6} className="outline_border">
+              <Col xs={6} className="outline_border sc_border_top_none">
                 <PaymentsMyview />
               </Col>
             </Row>
           </Col>
-          <Col x={4} className="outline_border">
+          <Col
+            x={4}
+            className="outline_border"
+            style={{ paddingTop: "10px", borderLeft: "none" }}
+          >
             <QuickNavigation />
           </Col>
         </Row>

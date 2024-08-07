@@ -69,7 +69,9 @@ const PendingTask = () => {
             <div key={val.id}>
               <div>
                 <h4 className="grey_title">{val.count}</h4>
-                <p className="grey_title">{val.title}</p>
+                <p className="grey_title" style={{ fontSize: "14px" }}>
+                  {val.title}
+                </p>
                 <div>
                   {val.details.map((res) => {
                     return (
