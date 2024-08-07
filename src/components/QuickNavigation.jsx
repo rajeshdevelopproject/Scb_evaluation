@@ -7,6 +7,7 @@ const QuickNavigation = () => {
     {
       id: "1",
       title: "Create Payments",
+
       desc: "Make a new domestic or international payment",
     },
     {
