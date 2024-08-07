@@ -34,7 +34,7 @@ const PaymentsMyview = () => {
   };
   return (
     <div>
-      <div>
+      <div style={{ height: "300px" }}>
         <TabHeader title="Payments in Last 7 Days(My view)" icon={true} />
         <Row style={{ padding: "0px 12px" }}>
           <Col xs={6} style={{ backgroundColor: "lightgray" }}>
@@ -62,6 +62,11 @@ const PaymentsMyview = () => {
             />
           </Col>
         </Row>
+      </div>
+      <div>
+        <p className="grey_title" style={{ fontSize: "10px" }}>
+          Last Updated 17/07/2024 10:12:04 AM
+        </p>
       </div>
     </div>
   );
