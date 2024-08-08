@@ -39,3 +39,25 @@ nav{
     border-top: none;
     padding: 10px;
 }
+.barcharts_div{
+    position: relative;
+    /* left: 70px; */
+}
+.bar_label{
+    width: 51px;
+    display: inline-block;
+    position: relative;
+    left: -16px;
+    text-align: center;
+}
+.barcharts_div::after{
+    margin-left: -9px;
+    width: 50px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid gray;
+    bottom: 0;
+    display: block;
+
+}

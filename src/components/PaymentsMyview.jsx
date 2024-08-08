@@ -2,39 +2,12 @@ import React from "react";
 import TabHeader from "./TapHeader/TabHeader";
 import { Col, Row } from "react-bootstrap";
 import Chart from "react-apexcharts";
+import BarCharts from "./BarCharts";
 
 const PaymentsMyview = () => {
-  const Processedseries = [
-    {
-      name: "",
-      data: [30],
-    },
-  ];
-  const Processedoptions = {
-    chart: {
-      id: "basic-bar",
-    },
-    xaxis: {
-      categories: ["Processed by Bank"],
-    },
-  };
-  const Rejectedseries = [
-    {
-      name: "",
-      data: [14],
-    },
-  ];
-  const Rejectedoptions = {
-    chart: {
-      id: "basic-bar",
-    },
-    xaxis: {
-      categories: ["Rejected by Bank"],
-    },
-  };
   return (
     <div>
-      <div style={{ height: "300px" }}>
+      <div>
         <TabHeader title="Payments in Last 7 Days(My view)" icon={true} />
         <Row style={{ padding: "0px 12px" }}>
           <Col xs={6} style={{ backgroundColor: "lightgray" }}>
@@ -44,22 +17,20 @@ const PaymentsMyview = () => {
             Bank Workflow
           </Col>
         </Row>
-        <Row className="p-2">
-          <Col xs={6}>
-            <Chart
-              series={Processedseries}
-              type="bar"
-              options={Processedoptions}
-              width="200"
-            />
+        <Row className="p-2" style={{ alignItems: "end" }}>
+          <Col xs={6} style={{ display: "grid", justifyContent: "center" }}>
+            <BarCharts
+              value={25}
+              color={"lightgreen"}
+              label={"Processed by Bank"}
+            ></BarCharts>
           </Col>
-          <Col xs={6}>
-            <Chart
-              series={Rejectedseries}
-              type="bar"
-              options={Rejectedoptions}
-              width="200"
-            />
+          <Col xs={6} style={{ display: "grid", justifyContent: "center" }}>
+            <BarCharts
+              value={14}
+              color={"#03b6fc"}
+              label={"Rejected by Bank"}
+            ></BarCharts>
           </Col>
         </Row>
       </div>
