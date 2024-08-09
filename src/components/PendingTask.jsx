@@ -1,7 +1,8 @@
 import React from "react";
 import TabHeader from "./TapHeader/TabHeader";
 import { Row, Col } from "react-bootstrap";
-
+import CarousalImplimentation from "./CarousalImplimentation";
+import { LuRefreshCw } from "react-icons/lu";
 const PendingTask = () => {
   let data = [
     {
@@ -63,7 +64,8 @@ const PendingTask = () => {
       >
         CASH
       </div>
-      <div style={{ display: "flex", gap: "30px", padding: "15px" }}>
+      <CarousalImplimentation />
+      {/* <div style={{ display: "flex", gap: "30px", padding: "15px" }}>
         {data.map((val) => {
           return (
             <div key={val.id}>
@@ -100,10 +102,11 @@ const PendingTask = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
       <div>
         <p className="grey_title" style={{ fontSize: "10px" }}>
-          Last Updated 17/07/2024 10:12:04 AM
+          <LuRefreshCw />
+          &nbsp;Last Updated 17/07/2024 10:12:04 AM
         </p>
       </div>
     </div>

@@ -3,6 +3,7 @@ import TabHeader from "./TapHeader/TabHeader";
 import { Col, Row } from "react-bootstrap";
 import Chart from "react-apexcharts";
 import BarCharts from "./BarCharts";
+import { LuRefreshCw } from "react-icons/lu";
 
 const PaymentsMyview = () => {
   return (
@@ -36,7 +37,8 @@ const PaymentsMyview = () => {
       </div>
       <div>
         <p className="grey_title" style={{ fontSize: "10px" }}>
-          Last Updated 17/07/2024 10:12:04 AM
+          <LuRefreshCw />
+          &nbsp;Last Updated 17/07/2024 10:12:04 AM
         </p>
       </div>
     </div>
