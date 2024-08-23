@@ -4,53 +4,53 @@ import { Row, Col } from "react-bootstrap";
 import CarousalImplimentation from "./CarousalImplimentation";
 import { LuRefreshCw } from "react-icons/lu";
 const PendingTask = () => {
-  let data = [
-    {
-      id: 1,
-      count: "687",
-      title: "Pending Send to Bank",
-      details: [
-        {
-          count: "687",
-          desc: "Payments",
-        },
-      ],
-    },
-    {
-      id: 2,
-      count: "8",
-      title: "Pending Send to Bank",
-      details: [
-        {
-          count: "5",
-          desc: "Payments",
-        },
-        {
-          count: "3",
-          desc: "Payments",
-        },
-      ],
-    },
-    {
-      id: 3,
-      count: "830",
-      title: "Pending Send to Bank",
-      details: [
-        {
-          count: "553",
-          desc: "Payments",
-        },
-        {
-          count: "11",
-          desc: "Payments",
-        },
-        {
-          count: "263",
-          desc: "Payments",
-        },
-      ],
-    },
-  ];
+  // let data = [
+  //   {
+  //     id: 1,
+  //     count: "687",
+  //     title: "Pending Send to Bank",
+  //     details: [
+  //       {
+  //         count: "687",
+  //         desc: "Payments",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 2,
+  //     count: "8",
+  //     title: "Pending Send to Bank",
+  //     details: [
+  //       {
+  //         count: "5",
+  //         desc: "Payments",
+  //       },
+  //       {
+  //         count: "3",
+  //         desc: "Payments",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 3,
+  //     count: "830",
+  //     title: "Pending Send to Bank",
+  //     details: [
+  //       {
+  //         count: "553",
+  //         desc: "Payments",
+  //       },
+  //       {
+  //         count: "11",
+  //         desc: "Payments",
+  //       },
+  //       {
+  //         count: "263",
+  //         desc: "Payments",
+  //       },
+  //     ],
+  //   },
+  // ];
   return (
     <div>
       <TabHeader title="1555 Pending Tasks" icon={false} />

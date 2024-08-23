@@ -43,6 +43,9 @@ nav{
     position: relative;
     /* left: 70px; */
 }
+.bar_overall_chart{
+    width: 30px;
+}
 .bar_label{
     width: 51px;
     display: inline-block;
@@ -88,4 +91,12 @@ nav{
     right: -55px;
     top: 275px;
     font-size: 14px !important  ;
+}
+.arrow_icon{
+    color: gray !important;
+    width: 40px !important; 
+    height: 40px !important;
+}
+.carousel-item{
+    display: block !important;
 }

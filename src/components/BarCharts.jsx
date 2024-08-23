@@ -2,7 +2,7 @@ import React from "react";
 
 const BarCharts = ({ value, color, label }) => {
   return (
-    <div style={{ width: "30px" }}>
+    <div className="bar_overall_chart">
       <span>{value}</span>
       <div
         className="barcharts_div"

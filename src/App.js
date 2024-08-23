@@ -1,11 +1,12 @@
-import './App.css';
-import Dashboard from './components/Dashboard/Dashboard';
-import './components/overallCss.css'
-
+import "./App.css";
+import Dashboard from "./components/Dashboard/Dashboard";
+import "./components/overallCss.css";
+import Header from "./components/Header/Header";
 function App() {
   return (
     <div className="App">
-      <Dashboard/>
+      <Header />
+      <Dashboard />
     </div>
   );
 }

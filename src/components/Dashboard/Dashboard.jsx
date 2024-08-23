@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../Header/Header";
 import PendingApproval from "../PendingApproval";
 import PriorityMessage from "../PriorityMessage";
 import QuickNavigation from "../QuickNavigation";
@@ -11,7 +10,6 @@ import { HiOutlineSpeakerphone } from "react-icons/hi";
 const Dashboard = () => {
   return (
     <div>
-      <Header />
       <Button className="feedback_but">
         <HiOutlineSpeakerphone />
         &nbsp;Give Feedback
